@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/properties"
+const API_URL = `${import.meta.env.VITE_API_URL}/properties`
 
 const getProperties = async (filters = {}) => {
     const queryParams = new URLSearchParams()

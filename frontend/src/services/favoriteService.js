@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/favorites"
+const API_URL = `${import.meta.env.VITE_API_URL}/favorites`
 
 const addFavorite = async (propertyId, token) => {
     const response = await fetch(API_URL, {
